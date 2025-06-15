@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Review Tracker</title>
+    <link rel = "stylesheet" href = "/static/styles.css">
+</head>
+<body>
+    <h1>Book Review Tracker</h1>
+    <form id="reviewForm">
+        <input type="text" placeholder="Book Title" id="title" required><br>
+        <input type="text" placeholder="Author" id="author" required><br>
+        <input type="number" placeholder="Rating (1–5)" id="rating" min="1" max="5" required><br>
+        <textarea placeholder="Your review..." id="review" required></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+    <div id = "reviews"></div>
+    <script src = "/static/main.js"></script>
+</body>
+</html>
